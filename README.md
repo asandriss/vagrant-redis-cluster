@@ -18,9 +18,8 @@ How to set up vagrant and start the cluster image.
 1. Move into the project directory: `cd vagrant-redis-cluster`  
 1. Install the *vbguest1* plugin: `vagrant plugin install vagrant-vbguest` 
 1. Provision the virtual machine using Vagrant: `vagrant up`
-1. Make sure you have the Redis CLI installed: `choco install redis-64` (Mac)
-1. Test the connection to verify everything is working: `redis-cli -p 7000` (or any other cluster port)
-2. To test cluster user `redis-cli -c -p 7000`
+1. Make sure you have the Redis CLI installed: `choco install redis-64` (must have Chocolatey)
+1. Test the connection to verify everything is working: `redis-cli -c -p 7000` (or any other cluster port)
 
 You should now have 6 redis servers running locally at:
 
