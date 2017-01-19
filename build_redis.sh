@@ -12,7 +12,8 @@ make
 sudo make install
 cp src/redis-trib.rb /usr/local/bin/redis-trib.rb
 
-sed -i "s/^# requirepass foobared/requirepass mypassword/g" ./redis.conf
+# Uncomment this line and update "mypassword" to wanted password
+#sed -i "s/^# requirepass foobared/requirepass mypassword/g" ./redis.conf
 
 cp ./redis.conf /etc/redis.conf
 
